@@ -1,0 +1,344 @@
+[
+  {
+    "city": "Colombo",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/colombo1.jpg",
+    "description": "Colombo, the vibrant capital, offers a mix of colonial architecture, bustling markets, and seaside charm at Galle Face Green.",
+    "activities": [
+      "Explore Galle Face Green",
+      "Visit the National Museum",
+      "Shop at Pettah Market"
+    ],
+    "galleryImages": [
+      "assets/images/colombo2.jpg",
+      "assets/images/colombo3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Western",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Galle",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/galle1.jpg",
+    "description": "Galle is famous for its UNESCO-listed Dutch Fort, pristine beaches, and vibrant cultural scene.",
+    "activities": [
+      "Tour the Galle Fort",
+      "Relax at Unawatuna Beach",
+      "Visit the Maritime Museum"
+    ],
+    "galleryImages": [
+      "assets/images/galle2.jpg",
+      "assets/images/galle3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Southern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Mirissa",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/mirissa1.jpg",
+    "description": "Mirissa is a beach paradise known for whale watching and surfing, with a laid-back vibe.",
+    "activities": [
+      "Go whale watching",
+      "Surf at Mirissa Beach",
+      "Visit Coconut Tree Hill"
+    ],
+    "galleryImages": [
+      "assets/images/mirissa2.jpg",
+      "assets/images/mirissa3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Southern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Kandy",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/kandy1.jpg",
+    "description": "Kandy, in the hill country, is home to the Temple of the Sacred Tooth Relic and scenic lakes.",
+    "activities": [
+      "Visit the Temple of the Tooth",
+      "Walk around Kandy Lake",
+      "Explore the Royal Botanical Gardens"
+    ],
+    "galleryImages": [
+      "assets/images/kandy2.jpg",
+      "assets/images/kandy3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Central",
+    "isVacationSpot": "Yes",
+    "category": "Religious"
+  },
+  {
+    "city": "Nuwara Eliya",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/nuwaraeliya1.jpg",
+    "description": "Nuwara Eliya, known as Little England, is famous for tea plantations and cool climate.",
+    "activities": [
+      "Tour a tea plantation",
+      "Visit Lake Gregory",
+      "Hike to Lover’s Leap Waterfall"
+    ],
+    "galleryImages": [
+      "assets/images/nuwaraeliya2.jpg",
+      "assets/images/nuwaraeliya3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Central",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Trincomalee",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/trincomalee1.jpg",
+    "description": "Trincomalee boasts pristine beaches like Nilaveli and historic sites like Fort Frederick.",
+    "activities": [
+      "Relax at Nilaveli Beach",
+      "Visit Fort Frederick",
+      "Go snorkeling at Pigeon Island"
+    ],
+    "galleryImages": [
+      "assets/images/trincomalee2.jpg",
+      "assets/images/trincomalee3.jpg"
+    ],
+    "season": "Summer",
+    "province": "Eastern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Arugam Bay",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/arugambay1.jpg",
+    "description": "Arugam Bay is a world-famous surfing destination with a vibrant beach culture.",
+    "activities": [
+      "Surf at Main Point",
+      "Visit Muhudu Maha Vihara",
+      "Relax at Peanut Farm Beach"
+    ],
+    "galleryImages": [
+      "assets/images/arugambay2.jpg",
+      "assets/images/arugambay3.jpg"
+    ],
+    "season": "Summer",
+    "province": "Eastern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Anuradhapura",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/anuradhapura1.jpg",
+    "description": "Anuradhapura is an ancient sacred city with significant Buddhist heritage, including the Sri Maha Bodhi tree.",
+    "activities": [
+      "Visit Sri Maha Bodhi",
+      "Explore Ruwanwelisaya Dagoba",
+      "See the Jetavanaramaya"
+    ],
+    "galleryImages": [
+      "assets/images/anuradhapura2.jpg",
+      "assets/images/anuradhapura3.jpg"
+    ],
+    "season": "Winter",
+    "province": "North Central",
+    "isVacationSpot": "Yes",
+    "category": "Religious"
+  },
+  {
+    "city": "Dambulla",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/dambulla1.jpg",
+    "description": "Dambulla is known for its Golden Temple and the largest cave temple complex in Sri Lanka.",
+    "activities": [
+      "Visit the Golden Temple",
+      "Explore Dambulla Cave Temple",
+      "Hike the Rock Temple"
+    ],
+    "galleryImages": [
+      "assets/images/dambulla2.jpg",
+      "assets/images/dambulla3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Central",
+    "isVacationSpot": "Yes",
+    "category": "Religious"
+  },
+  {
+    "city": "Jaffna",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/jaffna1.jpg",
+    "description": "Jaffna, in the north, features historic sites like Jaffna Fort and scenic beaches.",
+    "activities": [
+      "Visit Jaffna Fort",
+      "Explore Nallur Kandaswamy Temple",
+      "Relax at Casuarina Beach"
+    ],
+    "galleryImages": [
+      "assets/images/jaffna2.jpg",
+      "assets/images/jaffna3.jpg"
+    ],
+    "season": "Summer",
+    "province": "Northern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Hikkaduwa",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/hikkaduwa1.jpg",
+    "description": "Hikkaduwa is known for its coral reefs, turtle watching, and vibrant nightlife.",
+    "activities": [
+      "Snorkel at Hikkaduwa Coral Reef",
+      "Watch sea turtles",
+      "Enjoy the nightlife"
+    ],
+    "galleryImages": [
+      "assets/images/hikkaduwa2.jpg",
+      "assets/images/hikkaduwa3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Southern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Sigiriya",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/sigiriya1.jpg",
+    "description": "Sigiriya is famous for its ancient rock fortress and frescoes, a UNESCO World Heritage site.",
+    "activities": [
+      "Climb Sigiriya Rock",
+      "View the frescoes",
+      "Explore the water gardens"
+    ],
+    "galleryImages": [
+      "assets/images/sigiriya2.jpg",
+      "assets/images/sigiriya3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Central",
+    "isVacationSpot": "Yes",
+    "category": "Religious"
+  },
+  {
+    "city": "Ella",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/ella1.jpg",
+    "description": "Ella offers stunning views, hiking trails, and the famous Ella Rock.",
+    "activities": [
+      "Hike to Ella Rock",
+      "Visit Ravana Falls",
+      "Explore Demodara Nine Arch Bridge"
+    ],
+    "galleryImages": [
+      "assets/images/ella2.jpg",
+      "assets/images/ella3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Uva",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Polonnaruwa",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/polonnaruwa1.jpg",
+    "description": "Polonnaruwa is an ancient city with ruins, statues, and the Gal Vihara.",
+    "activities": [
+      "Visit Gal Vihara",
+      "Explore the Royal Palace",
+      "See the Lotus Pond"
+    ],
+    "galleryImages": [
+      "assets/images/polonnaruwa2.jpg",
+      "assets/images/polonnaruwa3.jpg"
+    ],
+    "season": "Winter",
+    "province": "North Central",
+    "isVacationSpot": "Yes",
+    "category": "Religious"
+  },
+  {
+    "city": "Ratnapura",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/ratnapura1.jpg",
+    "description": "Ratnapura, the City of Gems, is known for gem mining and lush rainforests.",
+    "activities": [
+      "Visit a gem mine",
+      "Explore the National Museum",
+      "Hike in Sinharaja Forest"
+    ],
+    "galleryImages": [
+      "assets/images/ratnapura2.jpg",
+      "assets/images/ratnapura3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Sabaragamuwa",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Matara",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/matara1.jpg",
+    "description": "Matara offers historic sites like the Star Fort and beautiful coastal views.",
+    "activities": [
+      "Visit the Star Fort",
+      "Relax at Polhena Beach",
+      "Explore the Matara Bodhiya"
+    ],
+    "galleryImages": [
+      "assets/images/matara2.jpg",
+      "assets/images/matara3.jpg"
+    ],
+    "season": "Winter",
+    "province": "Southern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  },
+  {
+    "city": "Kurunegala",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/kurunegala1.jpg",
+    "description": "Kurunegala is known for its rock formations and the Ethagala Temple.",
+    "activities": [
+      "Visit Ethagala Temple",
+      "Explore the rock caves",
+      "See the Kurunegala Lake"
+    ],
+    "galleryImages": [
+      "assets/images/kurunegala2.jpg",
+      "assets/images/kurunegala3.jpg"
+    ],
+    "season": "Winter",
+    "province": "North Western",
+    "isVacationSpot": "Yes",
+    "category": "Religious"
+  },
+  {
+    "city": "Trincomalee",
+    "country": "Sri Lanka",
+    "imageUrl": "assets/images/trincomalee1.jpg",
+    "description": "Trincomalee boasts pristine beaches like Nilaveli and historic sites like Fort Frederick.",
+    "activities": [
+      "Relax at Nilaveli Beach",
+      "Visit Fort Frederick",
+      "Go snorkeling at Pigeon Island"
+    ],
+    "galleryImages": [
+      "assets/images/trincomalee2.jpg",
+      "assets/images/trincomalee3.jpg"
+    ],
+    "season": "Summer",
+    "province": "Eastern",
+    "isVacationSpot": "Yes",
+    "category": "Enjoy"
+  }
+]
