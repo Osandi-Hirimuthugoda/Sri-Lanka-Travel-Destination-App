@@ -41,17 +41,13 @@ class _HomeScreenState extends State<HomeScreen> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+      print('Selected bottom nav index: $index');
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    final destinationProvider = Provider.of<DestinationProvider>(context, listen: false);
-
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      destinationProvider.loadDestinations();
-    });
-
+    print('Building HomeScreen');
     return Scaffold(
       appBar: AppBar(
         title: const Text('Sri Lanka Travel Destinations'),
@@ -75,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onChanged: (value) {
                         setState(() {
                           _searchQuery = value.toLowerCase();
+                          print('Search query: $_searchQuery');
                         });
                       },
                       decoration: const InputDecoration(
@@ -117,6 +114,7 @@ class _HomeContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('Building HomeContent with search: $searchQuery');
     return DefaultTabController(
       length: 2,
       child: Column(
@@ -130,29 +128,63 @@ class _HomeContent extends StatelessWidget {
           Expanded(
             child: Consumer<DestinationProvider>(
               builder: (context, provider, child) {
+                print('Destinations count: ${provider.destinations.length}, isLoading: ${provider.isLoading}');
+                if (provider.isLoading) {
+                  return const Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        CircularProgressIndicator(),
+                        SizedBox(height: 16),
+                        Text('Loading destinations...'),
+                      ],
+                    ),
+                  );
+                }
+                if (provider.errorMessage != null) {
+                  return Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Error: ${provider.errorMessage}'),
+                        const SizedBox(height: 16),
+                        ElevatedButton(
+                          onPressed: () => provider.loadDestinations(),
+                          child: const Text('Retry'),
+                        ),
+                      ],
+                    ),
+                  );
+                }
                 if (provider.destinations.isEmpty) {
-                  return const Center(child: CircularProgressIndicator());
+                  return const Center(child: Text('No destinations available'));
                 }
                 return TabBarView(
                   children: [
-                    _buildSeasonView(context, provider.destinations
-                        .where((d) => d.season?.toLowerCase() == 'summer')
-                        .where((d) =>
-                    searchQuery.isEmpty ||
-                        (d.city?.toLowerCase() ?? '').contains(searchQuery) ||
-                        (d.province?.toLowerCase() ?? '').contains(searchQuery) ||
-                        (d.category?.toLowerCase() ?? '').contains(searchQuery) ||
-                        (d.isVacationSpot?.toLowerCase() ?? '').contains(searchQuery))
-                        .toList()),
-                    _buildSeasonView(context, provider.destinations
-                        .where((d) => d.season?.toLowerCase() == 'winter')
-                        .where((d) =>
-                    searchQuery.isEmpty ||
-                        (d.city?.toLowerCase() ?? '').contains(searchQuery) ||
-                        (d.province?.toLowerCase() ?? '').contains(searchQuery) ||
-                        (d.category?.toLowerCase() ?? '').contains(searchQuery) ||
-                        (d.isVacationSpot?.toLowerCase() ?? '').contains(searchQuery))
-                        .toList()),
+                    _buildSeasonView(
+                      context,
+                      provider.destinations
+                          .where((d) => d.season.toLowerCase() == 'summer')
+                          .where((d) =>
+                      searchQuery.isEmpty ||
+                          d.city.toLowerCase().contains(searchQuery) ||
+                          d.province.toLowerCase().contains(searchQuery) ||
+                          d.category.toLowerCase().contains(searchQuery) ||
+                          (d.isVacationSpot ? 'yes' : 'no').contains(searchQuery))
+                          .toList(),
+                    ),
+                    _buildSeasonView(
+                      context,
+                      provider.destinations
+                          .where((d) => d.season.toLowerCase() == 'winter')
+                          .where((d) =>
+                      searchQuery.isEmpty ||
+                          d.city.toLowerCase().contains(searchQuery) ||
+                          d.province.toLowerCase().contains(searchQuery) ||
+                          d.category.toLowerCase().contains(searchQuery) ||
+                          (d.isVacationSpot ? 'yes' : 'no').contains(searchQuery))
+                          .toList(),
+                    ),
                   ],
                 );
               },
@@ -164,6 +196,7 @@ class _HomeContent extends StatelessWidget {
   }
 
   Widget _buildSeasonView(BuildContext context, List<Destination> destinations) {
+    print('Building season view with ${destinations.length} destinations');
     final provinces = destinations.map((d) => d.province).toSet().toList();
 
     return ListView.builder(
@@ -178,7 +211,7 @@ class _HomeContent extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                province ?? 'Unknown Province',
+                province,
                 style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
             ),
@@ -186,14 +219,14 @@ class _HomeContent extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
               child: ListTile(
                 leading: Image.asset(
-                  destination.imageUrl ?? '',
+                  destination.imageUrl,
                   width: 60,
                   height: 60,
                   fit: BoxFit.cover,
                   errorBuilder: (context, error, stackTrace) => const Icon(Icons.error),
                 ),
-                title: Text(destination.city ?? 'Unknown City'),
-                subtitle: Text('${destination.category ?? 'Unknown'} - ${destination.isVacationSpot ?? 'No'}'),
+                title: Text(destination.city),
+                subtitle: Text('${destination.category} - ${destination.isVacationSpot ? 'Vacation Spot' : 'Other'}'),
                 trailing: IconButton(
                   icon: Icon(
                     destination.isFavorite ? Icons.favorite : Icons.favorite_border,
@@ -202,10 +235,12 @@ class _HomeContent extends StatelessWidget {
                   onPressed: () {
                     final provider = Provider.of<DestinationProvider>(context, listen: false);
                     destination.isFavorite = !destination.isFavorite;
-                    provider.notifyListeners(); // Update UI
+                    provider.notifyListeners();
+                    print('Toggled favorite for ${destination.city}: ${destination.isFavorite}');
                   },
                 ),
                 onTap: () {
+                  print('Navigating to DetailScreen for ${destination.city}');
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -215,7 +250,7 @@ class _HomeContent extends StatelessWidget {
                 },
               ),
             )),
-            if (index < provinces.length - 1) const Divider(thickness: 1, color: Colors.grey), // Add divider between provinces
+            if (index < provinces.length - 1) const Divider(thickness: 1, color: Colors.grey),
           ],
         );
       },

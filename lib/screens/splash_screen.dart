@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:travel_destination_app/screens/home_screens.dart';
+import 'package:provider/provider.dart';
+import 'package:travel_destination_app/providers/destination_provider.dart';
+import 'package:travel_destination_app/screens/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -12,16 +14,20 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _navigateToHome();
-  }
-
-  void _navigateToHome() async {
-    await Future.delayed(const Duration(seconds: 2)); // Simulate loading
-    if (mounted) {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
-      );
-    }
+    Future.microtask(() async {
+      print('Preloading destinations in SplashScreen');
+      final destinationProvider = Provider.of<DestinationProvider>(context, listen: false);
+      await destinationProvider.loadDestinations();
+      print('Destinations loaded: ${destinationProvider.destinations.length}');
+      await Future.delayed(const Duration(seconds: 3));
+      if (mounted) {
+        print('Navigating to MainScreen');
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const MainScreen()),
+        );
+      }
+    });
   }
 
   @override
@@ -31,12 +37,12 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Sri Lanka Travel Destinations',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue),
-            ),
+            Image.asset('assets/images/travel_icon.jpg', width: 100),
             const SizedBox(height: 20),
-            const CircularProgressIndicator(color: Colors.blue),
+            const Text(
+              'Sri Lanka Travel',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),

@@ -16,7 +16,9 @@
     "season": "Winter",
     "province": "Western",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Urban",
+    "latitude": 6.9271,
+    "longitude": 79.8612
   },
   {
     "city": "Galle",
@@ -35,7 +37,9 @@
     "season": "Winter",
     "province": "Southern",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Beach",
+    "latitude": 6.0535,
+    "longitude": 80.2200
   },
   {
     "city": "Mirissa",
@@ -54,7 +58,9 @@
     "season": "Winter",
     "province": "Southern",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Beach",
+    "latitude": 5.9447,
+    "longitude": 80.4591
   },
   {
     "city": "Kandy",
@@ -73,7 +79,9 @@
     "season": "Winter",
     "province": "Central",
     "isVacationSpot": "Yes",
-    "category": "Religious"
+    "category": "Cultural",
+    "latitude": 7.2906,
+    "longitude": 80.6337
   },
   {
     "city": "Nuwara Eliya",
@@ -92,7 +100,9 @@
     "season": "Winter",
     "province": "Central",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Nature",
+    "latitude": 6.9497,
+    "longitude": 80.7891
   },
   {
     "city": "Trincomalee",
@@ -111,7 +121,9 @@
     "season": "Summer",
     "province": "Eastern",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Beach",
+    "latitude": 8.5874,
+    "longitude": 81.2152
   },
   {
     "city": "Arugam Bay",
@@ -130,7 +142,9 @@
     "season": "Summer",
     "province": "Eastern",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Beach",
+    "latitude": 6.8404,
+    "longitude": 81.8368
   },
   {
     "city": "Anuradhapura",
@@ -149,7 +163,9 @@
     "season": "Winter",
     "province": "North Central",
     "isVacationSpot": "Yes",
-    "category": "Religious"
+    "category": "Cultural",
+    "latitude": 8.3114,
+    "longitude": 80.4037
   },
   {
     "city": "Dambulla",
@@ -168,7 +184,9 @@
     "season": "Winter",
     "province": "Central",
     "isVacationSpot": "Yes",
-    "category": "Religious"
+    "category": "Cultural",
+    "latitude": 7.8568,
+    "longitude": 80.6491
   },
   {
     "city": "Jaffna",
@@ -187,7 +205,9 @@
     "season": "Summer",
     "province": "Northern",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Beach",
+    "latitude": 9.6615,
+    "longitude": 80.0255
   },
   {
     "city": "Hikkaduwa",
@@ -206,7 +226,9 @@
     "season": "Winter",
     "province": "Southern",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Beach",
+    "latitude": 6.1407,
+    "longitude": 80.0992
   },
   {
     "city": "Sigiriya",
@@ -225,7 +247,9 @@
     "season": "Winter",
     "province": "Central",
     "isVacationSpot": "Yes",
-    "category": "Religious"
+    "category": "Cultural",
+    "latitude": 7.9570,
+    "longitude": 80.7603
   },
   {
     "city": "Ella",
@@ -244,7 +268,9 @@
     "season": "Winter",
     "province": "Uva",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Nature",
+    "latitude": 6.8667,
+    "longitude": 81.0466
   },
   {
     "city": "Polonnaruwa",
@@ -263,7 +289,9 @@
     "season": "Winter",
     "province": "North Central",
     "isVacationSpot": "Yes",
-    "category": "Religious"
+    "category": "Cultural",
+    "latitude": 7.9403,
+    "longitude": 81.0188
   },
   {
     "city": "Ratnapura",
@@ -282,7 +310,9 @@
     "season": "Winter",
     "province": "Sabaragamuwa",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Nature",
+    "latitude": 6.6828,
+    "longitude": 80.3993
   },
   {
     "city": "Matara",
@@ -301,7 +331,9 @@
     "season": "Winter",
     "province": "Southern",
     "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Beach",
+    "latitude": 5.9485,
+    "longitude": 80.5353
   },
   {
     "city": "Kurunegala",
@@ -320,25 +352,8 @@
     "season": "Winter",
     "province": "North Western",
     "isVacationSpot": "Yes",
-    "category": "Religious"
-  },
-  {
-    "city": "Trincomalee",
-    "country": "Sri Lanka",
-    "imageUrl": "assets/images/trincomalee1.jpg",
-    "description": "Trincomalee boasts pristine beaches like Nilaveli and historic sites like Fort Frederick.",
-    "activities": [
-      "Relax at Nilaveli Beach",
-      "Visit Fort Frederick",
-      "Go snorkeling at Pigeon Island"
-    ],
-    "galleryImages": [
-      "assets/images/trincomalee2.jpg",
-      "assets/images/trincomalee3.jpg"
-    ],
-    "season": "Summer",
-    "province": "Eastern",
-    "isVacationSpot": "Yes",
-    "category": "Enjoy"
+    "category": "Cultural",
+    "latitude": 7.4869,
+    "longitude": 80.3621
   }
 ]
