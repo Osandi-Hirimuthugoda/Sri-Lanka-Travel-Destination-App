@@ -26,4 +26,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-}
+}git remote add origin https://github.com/USERNAME/REPO_NAME.git
