@@ -71,10 +71,55 @@ flutter:
   - assets/data/destinations.json
   - assets/images/colombo1.jpg
   - assets/images/colombo2.jpg
+  - assets/images/colombo3.jpg
   - assets/images/galle1.jpg
   - assets/images/galle2.jpg
-  - assets/images/london1.jpg
-  - assets/images/london2.jpg
+  - assets/images/galle3.jpg
+  - assets/images/mirissa1.jpg
+  - assets/images/mirissa2.jpg
+  - assets/images/mirissa3.jpg
+  - assets/images/kandy1.jpg
+  - assets/images/kandy2.jpg
+  - assets/images/kandy3.jpg
+  - assets/images/nuwaraeliya1.jpg
+  - assets/images/nuwaraeliya2.jpg
+  - assets/images/nuwaraeliya3.jpg
+  - assets/images/trincomalee1.jpg
+  - assets/images/trincomalee2.jpg
+  - assets/images/trincomalee3.jpg
+  - assets/images/arugambay1.jpg
+  - assets/images/arugambay2.jpg
+  - assets/images/arugambay3.jpg
+  - assets/images/anuradhapura1.jpg
+  - assets/images/anuradhapura2.jpg
+  - assets/images/anuradhapura3.jpg
+  - assets/images/dambulla1.jpg
+  - assets/images/dambulla2.jpg
+  - assets/images/dambulla3.jpg
+  - assets/images/jaffna1.jpg
+  - assets/images/jaffna2.jpg
+  - assets/images/jaffna3.jpg
+  - assets/images/hikkaduwa1.jpg
+  - assets/images/hikkaduwa2.jpg
+  - assets/images/hikkaduwa3.jpg
+  - assets/images/sigiriya1.jpg
+  - assets/images/sigiriya2.jpg
+  - assets/images/sigiriya3.jpg
+  - assets/images/ella1.jpg
+  - assets/images/ella2.jpg
+  - assets/images/ella3.jpg
+  - assets/images/polonnaruwa1.jpg
+  - assets/images/polonnaruwa2.jpg
+  - assets/images/polonnaruwa3.jpg
+  - assets/images/ratnapura1.jpg
+  - assets/images/ratnapura2.jpg
+  - assets/images/ratnapura3.jpg
+  - assets/images/matara1.jpg
+  - assets/images/matara2.jpg
+  - assets/images/matara3.jpg
+  - assets/images/kurunegala1.jpg
+  - assets/images/kurunegala2.jpg
+  - assets/images/kurunegala3.jpg
   - assets/images/travel_icon.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
