@@ -81,7 +81,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Animated logo with gradient and shadow
               Container(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,

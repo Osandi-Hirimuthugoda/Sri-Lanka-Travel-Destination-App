@@ -87,7 +87,7 @@ class AboutScreen extends StatelessWidget {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const Text(
-              'TravelApp Team\nColombo, Sri Lanka',
+              'Osandi Hirimuthugodage\nColombo, Sri Lanka',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16.0),

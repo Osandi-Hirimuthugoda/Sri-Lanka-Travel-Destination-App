@@ -171,7 +171,7 @@ class FavoritesScreen extends StatelessWidget {
                         fontSize: 14,
                       ),
                     ),
-                    // Removed rating display since it's not in your model
+                    //
                   ],
                 ),
               ),
